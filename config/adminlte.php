@@ -322,6 +322,26 @@ return [
             'label' => 4,
             'label_color' => 'success',
         ],
+
+        
+        ['header' => 'PRODUCTOS Y SERVICIOS'],
+        [
+            'text' => 'Portafolio / Catalogo',
+            'route' => 'portafolio.index',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+         [
+            'text' => 'Nuevo',
+            'route' => 'portafolio.create',
+            'icon' => 'fas fa-fw fa-user',
+        ], 
+        [
+            'text' => 'Etiqueteador',
+            'url' => 'etiqueteador',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+
+
         ['header' => 'account_settings'],
         [
             'text' => 'profile',

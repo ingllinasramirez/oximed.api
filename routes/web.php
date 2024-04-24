@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PortafolioController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -16,5 +17,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    
+
+
+    Route::resource('PortafolioProductosServicios', PortafolioController::class)->names('portafolio');
 });
